@@ -68,6 +68,10 @@ nav {
     font-size: 18px;
 }
 
+.menu li a:hover {
+    color: rgb(255, 171, 45);
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -199,7 +203,6 @@ nav {
 
 .featured {
     color: #ffffff;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     margin: 0px 50px 20px;
     padding: calc(100 * var(--px-to-vh));
     border-radius: 12px;
@@ -213,8 +216,8 @@ nav {
 .works-list .item {
     display: flex;
     gap: 30px;
-    margin-bottom: 30px;
-    padding: calc(2.8 * var(--px-to-vh));
+    margin-bottom: 2rem;
+    padding: calc(100 * var(--px-to-vh));
     border-bottom: 2px solid #e0e0e0;
 }
 
@@ -244,6 +247,7 @@ nav {
 .works-list .item h3 {
     font-size: 30px;
     margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
 }
 
 .featured .item .details .item-info,
@@ -268,6 +272,7 @@ nav {
 .featured .item .details .item-info h4,
 .works-list .item .details .item-info h4 {
     color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-size: 18px;
 }
 
@@ -275,6 +280,7 @@ nav {
 .works-list .item .details p {
     /* width: 700px; */
     text-align: justify;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
 }
 
 footer {
