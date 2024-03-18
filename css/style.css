@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap);
 
+:root {
+    --scale: 0.85;
+    --borderRadiusScale: 1;
+    --transitionFactor: 1;
+    --base-screen-height: 1080;
+    --px-to-vh: calc(1vh / var(--base-screen-height) * 100 * var(--scale));
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +17,7 @@
 
 html,
 body {
-    height: 100%;
+    width: calc(auto * var(--px-to-vh));
 }
 
 body {
@@ -145,8 +153,10 @@ nav {
 }
 
 .skills .right {
-    width: 420px;
-    height: 120px;
+    width: calc(220px * var(--px-to-vh));
+    height: calc(60px * var(--px-to-vh));
+    /* width: 420px; */
+    /* height: 120px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,9 +169,12 @@ nav {
     align-items: center;
     justify-content: center;
     background: #383e45;
-    width: 50px;
+    width: calc(70px * var(--px-to-vh));
+    height: calc(70px * var(--px-to-vh));
+    border-radius: calc(20 * var(--borderRadiusScale) * var(--px-to-vh));
+    /* width: 50px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 .skills .right .item i {
@@ -188,10 +201,12 @@ nav {
     color: #ffffff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     margin: 0px 50px 20px;
-    padding: 40px 290px 0;
+    padding: calc(100 * var(--px-to-vh));
     border-radius: 12px;
     background-color: rgba(110, 110, 110, 0.15);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: calc(auto * var(--px-to-vh));
+    height: calc(auto * var(--px-to-vh));
 }
 
 .featured .item,
@@ -199,14 +214,16 @@ nav {
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding: calc(2.8 * var(--px-to-vh));
     border-bottom: 2px solid #e0e0e0;
 }
 
 .featured .item img,
 .works-list .item img {
-    width: 300px;
-    height: 250px;
+    width: calc(600 * var(--px-to-vh));
+    height: calc(500 * var(--px-to-vh));
+    /* width: 300px;
+    height: 250px; */
     border-radius: 6px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
     animation-name: fade;
@@ -233,7 +250,7 @@ nav {
 .works-list .item .details .item-info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -256,23 +273,26 @@ nav {
 
 .featured .item .details p,
 .works-list .item .details p {
-    width: 700px;
+    /* width: 700px; */
     text-align: justify;
 }
 
 footer {
-    padding: 40px 0;
+    padding: calc(50 * var(--px-to-vh));
+    /* padding: 40px 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+    width: calc(500px * var(--px-to-vh));
+    height: calc(1080 * var(--px-to-vh));
 }
 
 footer .socials {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 40px;
     margin-bottom: 20px;
     list-style: none;
     text-decoration: none;
