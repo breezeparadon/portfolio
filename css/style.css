@@ -285,8 +285,6 @@ footer {
     align-items: center;
     color: #fff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
-    width: calc(500px * var(--px-to-vh));
-    height: calc(1080 * var(--px-to-vh));
 }
 
 footer .socials {
