@@ -22,26 +22,34 @@ body {
 
 body {
     background: #0f3854;
-    background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+    background: radial-gradient(ellipse at center, #18498E 0%, #02172e 70%);
     background-size: 100%;
 }
 
 .myport {
     display: flex;
     color: #fff;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-weight: 400;
     font-size: 25px;
     margin-top: 0.5rem;
     margin-left: 2.5rem;
 }
 
-nav {
+nav{
+    background: linear-gradient(to right, #18498E, rgb(8, 34, 67));
+    position: sticky;
+    top: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
-    background-color: rgba(110, 110, 110, 0.25);
-    padding: 12px;
+    align-items: center;
+    padding: 12px 80px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 999;
+    border-bottom: 1px solid #18498E;
+    backdrop-filter: blur(15px);
 }
 
 .logo a {
@@ -78,12 +86,11 @@ nav {
 .menu li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-size: 18px;
 }
 
 .menu li a:hover {
-    color: rgb(255, 171, 45);
+    color: #f9c234;
 }
 
 .dropdown {
@@ -97,7 +104,6 @@ nav {
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     background-color: inherit;
     font-family: inherit;
     margin-right: 2.5rem;
@@ -105,7 +111,7 @@ nav {
 }
 
 .dropdown:hover .dropbtn {
-    color: rgb(255, 171, 45);
+    color: #f9c234;
 }
 
 .dropdown-content {
@@ -127,7 +133,7 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(255, 171, 45, 0.8);
+    background-color: #f9c234;
 }
 
 .dropdown:hover .dropdown-content {
@@ -137,7 +143,7 @@ nav {
 .myskillportfolio {
     margin: 50px 50px 30px;
     padding: 10px 20px;
-    background: rgba(255, 171, 45, 0.75);
+    background: #f9c234;
     display: inline-block;
     color: #ffffff;
     border-radius: 12px;
@@ -148,21 +154,19 @@ nav {
     justify-content: space-around;
     margin: 0px 50px 20px;
     padding: 10px 30px;
-    background-color: rgba(110, 110, 110, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 12px;
 }
 
 .skills .left .info h3 {
     color: #fff;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-size: 30px;
     margin-bottom: 20px;
 }
 
 .skills .left .info p {
     color: #e4e3e3;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-size: 14px;
 }
 
@@ -203,7 +207,7 @@ nav {
 .seemore {
     margin: 50px -5px 30px;
     padding: 10px 20px;
-    background: rgba(255, 171, 45, 0.75);
+    background: #f9c234;
     display: inline-block;
     color: #ffffff;
     border-radius: 12px;
@@ -212,7 +216,7 @@ nav {
 }
 
 .seemore:hover {
-    background: rgb(255, 171, 45);
+    background: #fde03c;
 }
 
 .featured {
@@ -261,7 +265,6 @@ nav {
 .works-list .item h3 {
     font-size: 30px;
     margin-bottom: 16px;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
 }
 
 .featured .item .details .item-info,
@@ -275,7 +278,7 @@ nav {
 .featured .item .details .item-info .year-badge,
 .works-list .item .details .item-info .year-badge,
 .content .work-info .year-badge {
-    background: rgba(255, 171, 45, 0.75);
+    background: #f9c234;
     padding: 2px 14px;
     color: #fff;
     border-radius: 16px;
@@ -286,7 +289,6 @@ nav {
 .featured .item .details .item-info h4,
 .works-list .item .details .item-info h4 {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
     font-size: 18px;
 }
 
@@ -294,7 +296,7 @@ nav {
 .works-list .item .details p {
     /* width: 700px; */
     text-align: justify;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+    
 }
 
 .tooltip-container {
@@ -367,7 +369,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+    
 }
 
 footer .socials {
@@ -398,7 +400,7 @@ footer p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(255, 171, 45, 0.75);
+    background: #f9c234;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -411,7 +413,7 @@ footer p {
 
 .scroll-top:hover {
     border-color: #fff;
-    background: rgb(255, 171, 45);
+    background: #fde03c;
     box-shadow: none;
 }
 
