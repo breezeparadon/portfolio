@@ -403,7 +403,7 @@ h6 {
 /* Footer */
 
 footer {
-    padding: calc(50 * var(--px-to-vh));
+    padding: calc(30 * var(--px-to-vh));
     /* padding: 40px 0; */
     display: flex;
     flex-direction: column;
