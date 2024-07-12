@@ -432,19 +432,20 @@ footer p {
 }
 
 .scroll-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #f9c234;
-    color: #fff;
-    border: 1px solid transparent;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    padding: 8px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.3s ease;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f9c234;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
 .scroll-top:hover {
