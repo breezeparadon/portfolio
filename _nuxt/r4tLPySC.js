@@ -1,1 +1,0 @@
-import{_ as s,t,x as e,v as l}from"./DbhAQRGx.js";const o={};function c(r,n){return l(),t("section",null,n[0]||(n[0]=[e("div",{class:"container"},[e("div",{class:"row"},[e("div",{class:"col-12 align-items-center d-flex flex-column"},[e("h1",null,"WELCOME TO BLANK PROJECT"),e("h2",null,"CSS Bootstrap")])])],-1)]))}const i=s(o,[["render",c]]);export{i as default};
