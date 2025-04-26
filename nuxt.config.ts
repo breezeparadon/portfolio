@@ -1,10 +1,10 @@
 import { fileURLToPath, URL } from 'url'
 
-export default defineNuxtConfig({
+export default defineNuxtConfig ({
   app: {
     head: {
       titleTemplate: '%s',
-      title: 'Blank - Project',
+      title: 'Web Developer - Paradon Padjuntuk',
       link: [
         {
           rel: 'icon',
@@ -23,11 +23,11 @@ export default defineNuxtConfig({
         }
       ]
     },
-    baseURL: '/portfolio/', // 👈 เปลี่ยนตรงนี้ให้ตรงกับชื่อ repo ของคุณ!
+    baseURL: '/portfolio/',
   },
 
   nitro: {
-    preset: 'static', // 👈 เพิ่มตรงนี้เพื่อ build แบบ static
+    preset: 'static',
   },
 
   devtools: { enabled: true },
