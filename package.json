@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bootstrap-vue": "^2.23.1",
+    "nuxt": "^3.16.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.86.3"
+  }
+}

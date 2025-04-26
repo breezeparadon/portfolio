@@ -1,0 +1,20 @@
+<script setup>
+
+</script>
+
+<template>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-items-center d-flex flex-column">
+                    <h1>WELCOME TO BLANK PROJECT</h1>
+                    <h2>CSS Bootstrap</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+
+</style>
