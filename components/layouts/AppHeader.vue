@@ -54,13 +54,13 @@
 
     .navbar a {
         text-decoration: none;
-        color: #ffffff;
+        color: #EFF0F2;
         transition: color 0.3s ease;
         position: relative;
     }
 
     .navbar a:hover {
-        color: #ffffff;
+        color: #EFF0F2;
     }
 
     .navbar ul {
@@ -95,7 +95,7 @@
     }
 
     .custom-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10=' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#EFF0F2' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10=' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
 
     .custom-toggler.navbar-toggler {

@@ -3,72 +3,95 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 
 /* Images */
-import breeze from '@/assets/images/jpg/breeze.jpg';
+import factory77 from '@/assets/images/png/project/factory77.png';
+import muall from '@/assets/images/png/project/muall.png';
+import mualumni from '@/assets/images/png/project/mualumni.png';
+import spr1965 from '@/assets/images/png/project/spr1965.png';
+import sprtt from '@/assets/images/png/project/sprtt.png';
+import chaichodauto from '@/assets/images/png/project/360Auto.png';
 const projects = [
   {
+    title: 'Mahidol University All.',
+    framework: 'Vue (Nuxt.js)',
+    role: 'Frontend',
+    year: '2024',
+    image: muall,
+    link: 'https://lifelong.mahidol.ac.th/'
+  },
+  {
+    title: 'FACTORY 77 Co., Ltd.,',
+    framework: 'React (Next.js)',
+    role: 'Frontend',
+    year: '2023',
+    image: factory77,
+    link: 'https://www.factory77.co.th/'
+  },
+  {
+    title: 'Superrich Currency Exchange (1965) Co., Ltd.,',
+    framework: 'Vue (Nuxt.js)',
+    role: 'Frontend',
+    year: '2024',
+    image: spr1965,
+    link: 'https://www.superrich1965.com/'
+  },
+  {
+    title: 'SuperRich Turtle Exchange Co., Ltd.,',
+    framework: 'Vue (Nuxt.js)',
+    role: 'Frontend',
+    year: '2024',
+    image: sprtt,
+    link: 'https://www.superrichturtle.co.th/'
+  },
+  {
+    title: 'Chaichod Co., Ltd.,',
+    framework: 'PHP Laravel',
+    role: 'FullStack',
+    year: '2025',
+    image: chaichodauto,
+    link: 'https://demo.360auto.online/th'
+  },
+  {
     title: '',
-    language: '',
     framework: '',
     role: 'Frontend',
-    year: '2022',
+    year: '2024',
     image: '',
     link: '#'
   },
   {
     title: '',
-    language: '',
     framework: '',
     role: 'Frontend',
-    year: '2022',
+    year: '2024',
     image: '',
     link: '#'
   },
   {
     title: '',
-    language: '',
     framework: '',
     role: 'Frontend',
-    year: '2022',
+    year: '2025',
     image: '',
     link: '#'
   },
   {
-    title: '',
-    language: '',
-    framework: '',
-    role: 'Frontend',
+    title: 'Mahidol University Alumni Relations.',
+    framework: 'PHP (Wordpress)',
+    role: 'FullStack',
     year: '2022',
-    image: '',
-    link: '#'
+    image: mualumni,
+    link: 'https://alumni.mahidol.ac.th/'
   },
-  {
-    title: '',
-    language: '',
-    framework: '',
-    role: 'Frontend',
-    year: '2022',
-    image: '',
-    link: '#'
-  },
-  {
-    title: '',
-    language: '',
-    framework: '',
-    role: 'Frontend',
-    year: '2022',
-    image: '',
-    link: '#'
-  }
 ]
 </script>
 
 <template>
     <section class="bg-grey">
-        <div class="container pt-4 pb-4">
+        <div class="container pt-4 pb-4 mobile-custom-padding">
             <div class="row">
                 <div class="col-12">
-                <h2 class="text-center primary-600">Featured Web Development Projects</h2>
-                <p class="text-center title-3">Explore my work with frameworks like Vue.js, React, and WordPress</p>
+                <h2 class="text-center primary-blue900">Featured Web Development Projects</h2>
+                <p class="text-center primary-blue600">Explore my work with frameworks like Vue.js, React, and WordPress</p>
                 </div>
             </div>
             <template>
@@ -131,9 +154,8 @@ const projects = [
                             <a :href="project.link" target="_blank">
                                 <div class="item-card card">
                                     <div class="wrapper">
-                                        <div class="wrapper-content d-flex flex-column">
-                                            <div>Language: {{ project.language }}</div>
-                                            <div>CMS / Framework: {{ project.framework }}</div>
+                                        <div class="wrapper-content d-flex">
+                                            <div class="bg-blur primary-blue500">CMS / Framework: {{ project.framework }}</div>
                                         </div>
                                     </div>
                                     <div class="backgroundImage" :style="`background-image: url(${project.image})`" ></div>
@@ -199,6 +221,13 @@ const projects = [
 
 .frame-item a {
   text-decoration: none;
+}
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 4px;
+  padding: 2px 8px;
 }
 
 /* ===== Card Style ===== */
@@ -315,7 +344,7 @@ const projects = [
 /* ===== Swiper Custom Positioning ===== */
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .the-content {
     padding: 12px;
     font-size: 14px;
@@ -332,6 +361,14 @@ const projects = [
   .metadata svg {
     width: 18px;
     height: 18px;
+  }
+}
+@media(max-width: 767px) {
+  .mobile-custom-padding {
+    padding: 0;
+  }
+  .frame-item {
+    padding: 30px 0px;
   }
 }
 </style>

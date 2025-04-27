@@ -22,8 +22,8 @@ onMounted(() => {
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column align-items-center">
-                    <h1 class="intro-title mb-4">I'm Paradon <div class="pc-hide"></div>Padjuntuk</h1>
-                    <p class="intro-subtitle"><strong ref="el"></strong></p>
+                    <h1 class="intro-title primary-blue25 mb-4">I'm Paradon <div class="pc-hide"></div>Padjuntuk</h1>
+                    <p class="intro-subtitle primary-blue25"><strong ref="el"></strong></p>
                 </div>
             </div>
         </div>
@@ -63,9 +63,6 @@ onMounted(() => {
     }
 
     .intro .intro-title {
-        color: #fff;
-        font-weight: 600;
-        font-size: 3rem;
         z-index: 2;
     }
 
