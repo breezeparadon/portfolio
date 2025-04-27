@@ -9,6 +9,9 @@ import mualumni from '@/assets/images/png/project/mualumni.png';
 import spr1965 from '@/assets/images/png/project/spr1965.png';
 import sprtt from '@/assets/images/png/project/sprtt.png';
 import chaichodauto from '@/assets/images/png/project/360Auto.png';
+import prosupply from '@/assets/images/png/project/prosupply.png';
+import twocbiz from '@/assets/images/png/project/2cbiz.png';
+import sd from '@/assets/images/png/project/sd.png';
 const projects = [
   {
     title: 'Mahidol University All.',
@@ -28,8 +31,8 @@ const projects = [
   },
   {
     title: 'Superrich Currency Exchange (1965) Co., Ltd.,',
-    framework: 'Vue (Nuxt.js)',
-    role: 'Frontend',
+    framework: 'Vue (Nuxt.js) / Node.js (Express.js) + RESTful API',
+    role: 'FullStack',
     year: '2024',
     image: spr1965,
     link: 'https://www.superrich1965.com/'
@@ -51,28 +54,28 @@ const projects = [
     link: 'https://demo.360auto.online/th'
   },
   {
-    title: '',
-    framework: '',
-    role: 'Frontend',
-    year: '2024',
-    image: '',
-    link: '#'
-  },
-  {
-    title: '',
-    framework: '',
-    role: 'Frontend',
-    year: '2024',
-    image: '',
-    link: '#'
-  },
-  {
-    title: '',
-    framework: '',
+    title: 'SD Consultant Co., Ltd.,',
+    framework: 'PHP (Wordpress)',
     role: 'Frontend',
     year: '2025',
-    image: '',
-    link: '#'
+    image: sd,
+    link: 'https://www.sdieducation.com/'
+  },
+  {
+    title: 'บริษัท โปรอินดัสเตรียล ซัพพลาย จำกัด',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2025',
+    image: prosupply,
+    link: 'https://prosupply.co.th/'
+  },
+  {
+    title: 'บริษัท ทูซี บิซ จำกัด',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2025',
+    image: twocbiz,
+    link: 'https://2cbiz.co.th/'
   },
   {
     title: 'Mahidol University Alumni Relations.',
@@ -86,7 +89,7 @@ const projects = [
 </script>
 
 <template>
-    <section class="bg-grey">
+    <section class="bg-grey" id="project">
         <div class="container pt-4 pb-4 mobile-custom-padding">
             <div class="row">
                 <div class="col-12">

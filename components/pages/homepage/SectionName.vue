@@ -26,6 +26,7 @@ onMounted(() => {
                     <p class="intro-subtitle primary-blue25"><strong ref="el"></strong></p>
                 </div>
             </div>
+            <SectionSkill />
         </div>
     </section>
   
@@ -46,7 +47,7 @@ onMounted(() => {
 
     /* Intro */
     .intro {
-        height: 100vh;
+        height: 95vh;
         position: relative;
         color: #fff;
     }
@@ -60,6 +61,7 @@ onMounted(() => {
         height: 100%;
         width: 100%;
         opacity: 0.9;
+        z-index: 1;
     }
 
     .intro .intro-title {
@@ -75,6 +77,22 @@ onMounted(() => {
     @media (min-width: 767px) {
         .pc-hide {
             display: none;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .intro {
+            height: 100vh;
+        }
+    }
+    @media(max-width: 992px) {
+        .intro {
+            height: 130vh;
+        }
+    }
+    @media(max-width: 767px) {
+        .intro {
+            height: 150vh;
         }
     }
 

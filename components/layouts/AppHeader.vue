@@ -21,13 +21,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
                     <li class="nav-item">
-                        <a class="nav-link hover-underline-animation" href="#home">Home</a>
+                        <a class="nav-link hover-underline-animation" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hover-underline-animation" href="#">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-underline-animation" href="#">Contact</a>
+                        <a class="nav-link hover-underline-animation" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#contact">Contact</a>
                     </li>
                 </ul>
                 </div>
