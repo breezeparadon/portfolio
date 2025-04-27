@@ -30,7 +30,7 @@ export default defineNuxtConfig ({
     preset: 'static',
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   css: [
     '@styles/styles.scss',

@@ -1,4 +1,5 @@
 <script setup>
+import SectionSkill from "@/components/pages/homepage/SectionSkill.vue";
 import { onMounted, ref } from 'vue'
 import Typed from 'typed.js'
 

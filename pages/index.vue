@@ -1,12 +1,12 @@
 <script setup>
     import SectionName from "@/components/pages/homepage/SectionName.vue";
-    import SectionSkill from "@/components/pages/homepage/SectionSkill.vue";
+    import SectionProject from "@/components/pages/homepage/SectionProject.vue";
 </script>
 
 <template>
     <section>
         <SectionName />
-        <SectionSkill />
+        <SectionProject />
     </section>
 </template>
 
