@@ -47,7 +47,7 @@ onMounted(() => {
 
     /* Intro */
     .intro {
-        height: 95vh;
+        padding-bottom: 40px;
         position: relative;
         color: #fff;
     }
