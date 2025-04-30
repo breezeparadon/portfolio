@@ -12,6 +12,19 @@ import chaichodauto from '@/assets/images/png/project/360Auto.png';
 import prosupply from '@/assets/images/png/project/prosupply.png';
 import twocbiz from '@/assets/images/png/project/2cbiz.png';
 import sd from '@/assets/images/png/project/sd.png';
+import sahamit from '@/assets/images/png/project/sahamit.png';
+import nppolymers from '@/assets/images/png/project/nppolymers.png';
+import un from '@/assets/images/png/project/un.png';
+import prowinner from '@/assets/images/png/project/prowinner.png';
+import ichirin from '@/assets/images/png/project/ichirin.png';
+import merge from '@/assets/images/png/project/merge.png';
+import adhesiveglue from '@/assets/images/png/project/adhesiveglue.png';
+import ysc from '@/assets/images/png/project/ysc.png';
+import bigfivesolar from '@/assets/images/png/project/bigfivesolar.png';
+import tyh from '@/assets/images/png/project/tyh.png';
+import lomthong from '@/assets/images/png/project/lomthong.png';
+import pipefitting from '@/assets/images/png/project/pipefitting.png';
+import appmanage from '@/assets/images/png/project/appmanage.png';
 const projects = [
   {
     title: 'Mahidol University All.',
@@ -40,7 +53,7 @@ const projects = [
   {
     title: 'SuperRich Turtle Exchange Co., Ltd.,',
     framework: 'Vue (Nuxt.js)',
-    role: 'Frontend',
+    role: 'FullStack',
     year: '2024',
     image: sprtt,
     link: 'https://www.superrichturtle.co.th/'
@@ -54,12 +67,28 @@ const projects = [
     link: 'https://demo.360auto.online/th'
   },
   {
+    title: 'PRO WINNER CO.,LTD.',
+    framework: 'PHP (Woocommerce)',
+    role: 'FullStack',
+    year: '2025',
+    image: prowinner,
+    link: 'https://www.prowinner.co.th/'
+  },
+  {
     title: 'SD Consultant Co., Ltd.,',
     framework: 'PHP (Wordpress)',
     role: 'Frontend',
     year: '2025',
     image: sd,
     link: 'https://www.sdieducation.com/'
+  },
+  {
+    title: 'Ichirin Co., Ltd.',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2023',
+    image: ichirin,
+    link: 'https://ichirinwellness.com/'
   },
   {
     title: 'บริษัท โปรอินดัสเตรียล ซัพพลาย จำกัด',
@@ -77,6 +106,95 @@ const projects = [
     image: twocbiz,
     link: 'https://2cbiz.co.th/'
   },
+  {
+    title: 'NP Polymer CO.,LTD',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2025',
+    image: nppolymers,
+    link: 'https://www.nppolymers.com/'
+  },
+  {
+    title: 'UNIDO',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2025',
+    image: un,
+    link: 'https://decarbonizethaicementconcrete.org/'
+  },
+  {
+    title: 'Merge Property',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: merge,
+    link: 'https://mergeproperty.co.th/'
+  },
+  {
+    title: 'T.P. SahaMit Group',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: sahamit,
+    link: 'https://sahamitgroup.com/'
+  },
+  {
+    title: 'P. ADHESIVE GLUE MANUFACTURING',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: adhesiveglue,
+    link: 'https://p-adhesiveglue.com/'
+  },
+  {
+    title: 'YSC Clinic',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: ysc,
+    link: 'https://ysc-clinic.com/'
+  },
+  {
+    title: 'THAI YONG HONG ELECTRIC FACTORY CO., LTD.',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: tyh,
+    link: 'https://caribbeanfan.com/'
+  },
+  {
+    title: 'BIG FIVE ELECTRIC GROUP CO.,LTD.',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: bigfivesolar,
+    link: 'https://bigfivesolar.com/'
+  },
+  {
+    title: 'Pantip Lomthong',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: lomthong,
+    link: 'https://lomthong.com/'
+  },
+  {
+    title: 'บริษัท สหชัย เอกประสิทธิ์ จำกัด',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: pipefitting,
+    link: 'https://pipefittingthai.com/'
+  },
+  {
+    title: 'APP Services and Management',
+    framework: 'PHP (Wordpress)',
+    role: 'Frontend',
+    year: '2024',
+    image: appmanage,
+    link: 'https://appmanagement.co.th/'
+  },
+  
   {
     title: 'Mahidol University Alumni Relations.',
     framework: 'PHP (Wordpress)',
@@ -134,12 +252,17 @@ const projects = [
                                 spaceBetween: 32,
                             },
                             '1280': {
-                                slidesPerView: 3.5,
+                                slidesPerView: 2.99,
+                                centeredSlides: 'false',
+                                spaceBetween: 32,
+                            },
+                            '1440': {
+                                slidesPerView: 3.4,
                                 centeredSlides: 'false',
                                 spaceBetween: 32,
                             },
                             '1920': {
-                                slidesPerView: 3.5,
+                                slidesPerView: 3.8,
                                 centeredSlides: 'false',
                                 spaceBetween: 32,
                             },

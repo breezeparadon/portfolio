@@ -7,7 +7,7 @@ const el = ref(null)
 
 onMounted(() => {
   new Typed(el.value, {
-    strings: ['Web Developer', 'Frontend Developer'],
+    strings: ['Web Developer',],
     typeSpeed: 80,
     backSpeed: 30,
     backDelay: 1100,
