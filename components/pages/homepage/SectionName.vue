@@ -19,7 +19,7 @@ onMounted(() => {
 <template>
     <section class="bg__sectionname space-top intro">
         <div class="overlay-intro"></div>
-        <div class="container">
+        <div class="container custom-container__sectionname">
             <div class="row">
                 <div class="col-12 d-flex flex-column align-items-center">
                     <h1 class="intro-title primary-blue25 mb-4">I'm Paradon <div class="pc-hide"></div>Padjuntuk</h1>
@@ -47,7 +47,7 @@ onMounted(() => {
 
     /* Intro */
     .intro {
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         position: relative;
         color: #fff;
     }
@@ -81,18 +81,18 @@ onMounted(() => {
     }
 
     @media(max-width: 1024px) {
-        .intro {
-            height: 100vh;
-        }
     }
     @media(max-width: 992px) {
-        .intro {
-            height: 130vh;
+        .space-top {
+            padding-top: 89px;
         }
     }
     @media(max-width: 767px) {
         .intro {
-            height: 150vh;
+            padding-bottom: 24px;
+        }
+        .custom-container__sectionname {
+            padding: 0 24px;
         }
     }
 

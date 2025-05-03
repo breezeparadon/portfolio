@@ -98,8 +98,9 @@
     }
 
     .custom-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#EFF0F2' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10=' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
+
 
     .custom-toggler.navbar-toggler {
         border: none;
@@ -113,4 +114,9 @@
         padding: 0;
     }
 
+    @media(max-width: 992px) {
+        .navbar {
+            padding: 12px 24px;
+        }
+    }
 </style>

@@ -6,13 +6,17 @@ import AppFooter from "@/components/layouts/AppFooter.vue";
 </script>
 
 <template>
-  <div>
+  <div class="layout-container">
     <AppHeader />
-    <div>
+    <main>
       <slot />
-    </div>
+    </main>
     <AppFooter />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.layout-container {
+  overflow-x: hidden;
+}
+</style>

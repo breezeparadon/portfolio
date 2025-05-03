@@ -1,6 +1,9 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 /* Images */
 import factory77 from '@/assets/images/png/project/factory77.png';
@@ -25,6 +28,7 @@ import tyh from '@/assets/images/png/project/tyh.png';
 import lomthong from '@/assets/images/png/project/lomthong.png';
 import pipefitting from '@/assets/images/png/project/pipefitting.png';
 import appmanage from '@/assets/images/png/project/appmanage.png';
+
 const projects = [
   {
     title: 'Mahidol University All.',
@@ -208,69 +212,35 @@ const projects = [
 
 <template>
     <section class="bg-grey" id="project">
-        <div class="container pt-4 pb-4 mobile-custom-padding">
+        <div class="container-fluid p-0 pt-4 pb-4">
             <div class="row">
                 <div class="col-12">
-                <h2 class="text-center primary-blue900">Featured Web Development Projects</h2>
-                <p class="text-center primary-blue600">Explore my work with frameworks like Vue.js, React, and WordPress</p>
+                <h2 class="text-center primary-blue900 custom-padding__sectionproject">Web Development Projects</h2>
+                <p class="text-center primary-blue600 custom-padding__sectionproject">Explore my work with frameworks like Vue.js, React, and WordPress</p>
                 </div>
             </div>
             <template>
                 <div class="pathbox">
                     <Swiper
-                        
+                        :modules="[Navigation]"
+                        navigation
                         :slides-per-view="3"
                         :space-between="32"
                         :loop="true"
                         :pagination="{
-                        clickable: true,
+                          clickable: true,
                         }"
                         :breakpoints="{
-                            '320': {
-                                slidesPerView: 1.4,
-                                centeredSlides: 'true',
-                                spaceBetween: 32,
-                            },
-                            '375': {
-                                slidesPerView: 1.4,
-                                centeredSlides: 'true',
-                                spaceBetween: 32,
-                            },
-                            '425': {
-                                slidesPerView: 1.4,
-                                centeredSlides: 'true',
-                                spaceBetween: 32,
-                            },
-                            '768': {
-                                slidesPerView: 1.8,
-                                centeredSlides: 'false',
-                                spaceBetween: 32,
-                            },
-                            '1024': {
-                                slidesPerView: 2.5,
-                                centeredSlides: 'false',
-                                spaceBetween: 32,
-                            },
-                            '1280': {
-                                slidesPerView: 2.99,
-                                centeredSlides: 'false',
-                                spaceBetween: 32,
-                            },
-                            '1440': {
-                                slidesPerView: 3.4,
-                                centeredSlides: 'false',
-                                spaceBetween: 32,
-                            },
-                            '1920': {
-                                slidesPerView: 3.8,
-                                centeredSlides: 'false',
-                                spaceBetween: 32,
-                            },
+                          '320': { slidesPerView: 1.4, centeredSlides: true, spaceBetween: 32 },
+                          '375': { slidesPerView: 1.4, centeredSlides: true, spaceBetween: 32 },
+                          '425': { slidesPerView: 1.2, centeredSlides: true, spaceBetween: 24 },
+                          '768': { slidesPerView: 2.2, centeredSlides: true, spaceBetween: 32 },
+                          '1024': { slidesPerView: 2.8, centeredSlides: true, spaceBetween: 32 },
+                          '1280': { slidesPerView: 3.1, centeredSlides: true, spaceBetween: 32 },
+                          '1440': { slidesPerView: 3.75, centeredSlides: true, spaceBetween: 32 },
+                          '1920': { slidesPerView: 4.5, centeredSlides: true, spaceBetween: 32 }
                         }"
-                        :autoplay="{
-                        delay: 8000,
-                        disableOnInteraction: true,
-                        }"
+                        :autoplay="{ delay: 8000, disableOnInteraction: true }"
                         class="frame-item"
                     >
                         <SwiperSlide
@@ -340,7 +310,7 @@ const projects = [
 }
 
 .frame-item {
-  padding: 30px 15px;
+  padding: 30px 0px;
   top: 15px;
   position: relative;
 }
@@ -466,6 +436,111 @@ const projects = [
   align-items: center;
   gap: 10px;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 48px;
+  height: 48px;
+  background-color: #18498e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #0c2d5c;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  color: white;
+}
+
+.custom-padding__sectionproject {
+  padding: 0 32px;
+}
+
+:deep(.swiper-button-prev) {
+  width: 48px;
+  height: 48px;
+  background-color: #18498e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+:deep(.swiper-button-next) {
+  width: 48px;
+  height: 48px;
+  background-color: #18498e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+:deep(.swiper-button-prev:hover,
+.swiper-button-next:hover) {
+  background-color: #0c2d5c;
+}
+
+:deep(.swiper-button-next:hover) {
+  background-color: #0c2d5c;
+}
+
+:deep(.swiper-button-prev::after) {
+  font-size: 14px;
+  color: white;
+}
+
+:deep(.swiper-button-next::after) {
+  font-size: 14px;
+  color: white;
+}
+
+:deep(.swiper-pagination) {
+  margin-top: 32px;
+  position: relative; /* สำคัญมากหากอยู่ใน container ที่ไม่ absolute */
+}
+
+/* สีปกติ */
+:deep(.swiper-pagination-bullet) {
+  background-color: #acacad;
+  opacity: 1; /* ให้เห็นชัด */
+  transition: background-color 0.3s ease;
+}
+
+/* hover */
+:deep(.swiper-pagination-bullet:hover) {
+  background-color: #537EBA;
+}
+
+/* เมื่อเป็น active */
+:deep(.swiper-pagination-bullet-active) {
+  background-color: #18498E;
+}
+
+
 
 /* ===== Swiper Custom Positioning ===== */
 
