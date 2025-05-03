@@ -222,26 +222,26 @@ const projects = [
             <template>
                 <div class="pathbox">
                     <Swiper
-                        :modules="[Navigation]"
-                        navigation
-                        :slides-per-view="3"
-                        :space-between="32"
-                        :loop="true"
-                        :pagination="{
-                          clickable: true,
-                        }"
-                        :breakpoints="{
-                          '320': { slidesPerView: 1.4, centeredSlides: true, spaceBetween: 32 },
-                          '375': { slidesPerView: 1.4, centeredSlides: true, spaceBetween: 32 },
-                          '425': { slidesPerView: 1.2, centeredSlides: true, spaceBetween: 24 },
-                          '768': { slidesPerView: 2.2, centeredSlides: true, spaceBetween: 32 },
-                          '1024': { slidesPerView: 2.8, centeredSlides: true, spaceBetween: 32 },
-                          '1280': { slidesPerView: 3.1, centeredSlides: true, spaceBetween: 32 },
-                          '1440': { slidesPerView: 3.75, centeredSlides: true, spaceBetween: 32 },
-                          '1920': { slidesPerView: 4.5, centeredSlides: true, spaceBetween: 32 }
-                        }"
-                        :autoplay="{ delay: 8000, disableOnInteraction: true }"
-                        class="frame-item"
+                      :modules="[Navigation]"
+                      navigation
+                      :slides-per-view="'auto'"
+                      :space-between="32"
+                      :loop="true"
+                      :centered-slides="true"
+                      :centered-slides-bounds="true"
+                      :pagination="{ clickable: true }"
+                      :breakpoints="{
+                        '320': { slidesPerView: 1.19, centeredSlides: true, spaceBetween: 12 },
+                        '375': { slidesPerView: 1.19, centeredSlides: true, spaceBetween: 12 },
+                        '425': { slidesPerView: 1.19, centeredSlides: true, spaceBetween: 12 },
+                        '768': { slidesPerView: 2.2, centeredSlides: true, spaceBetween: 24 },
+                        '1024': { slidesPerView: 2.8, centeredSlides: true, spaceBetween: 24 },
+                        '1280': { slidesPerView: 3.1, centeredSlides: true, spaceBetween: 24 },
+                        '1440': { slidesPerView: 3.5, centeredSlides: true, spaceBetween: 24 },
+                        '1920': { slidesPerView: 4.5, centeredSlides: true, spaceBetween: 24 }
+                      }"
+                      :autoplay="{ delay: 8000, disableOnInteraction: true }"
+                      class="frame-item"
                     >
                         <SwiperSlide
                             v-for="(project, index) in projects"
@@ -359,12 +359,6 @@ const projects = [
   transform: translateX(-12%);
   left: 20%;
   z-index: 1;
-}
-
-.card:hover {
-  transform: scale(1.025);
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 /* ===== Background Layers ===== */
@@ -540,7 +534,14 @@ const projects = [
   background-color: #18498E;
 }
 
+:deep(.swiper-slide) {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
 
+:deep(.swiper-slide-active) {
+  transform: scale(1.015);
+}
 
 /* ===== Swiper Custom Positioning ===== */
 
@@ -569,7 +570,10 @@ const projects = [
     padding: 0;
   }
   .frame-item {
-    padding: 30px 0px;
+    padding: 30px 0px !important;
+  }
+  .pathbox {
+    height: 300px;
   }
 }
 </style>
