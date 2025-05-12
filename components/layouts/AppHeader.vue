@@ -1,5 +1,6 @@
 <script setup>
-    
+    import resumeEN from '@/assets/images/Paradon Padjuntuk-EN.pdf';
+    import resumeTH from '@/assets/images/Paradon Padjuntuk-TH.pdf';
 </script>
 
 <template>
@@ -23,8 +24,14 @@
                     <li class="nav-item">
                         <a class="nav-link hover-underline-animation" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-underline-animation" href="#">Resume</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" style="color: #18498e;" :href="resumeTH" target="_blank">Resume TH</a></li>
+                            <li><a class="dropdown-item" style="color: #18498e;" :href="resumeEN" target="_blank">Resume EN</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hover-underline-animation" href="#project">Project</a>
@@ -69,6 +76,20 @@
     .navbar ul {
         padding-left: 16px;
         font-size: 16px;
+    }
+
+    ul.dropdown-menu {
+        padding: 16px;
+    }
+    a.dropdown-item {
+        padding: 8px;
+    }
+    a.dropdown-item:hover {
+        transition: all 0.3s ease-in-out;
+        padding-left: 16px !important;
+        border-radius: 6px;
+        background-color: #07387d !important;
+        color: #f9c234 !important;
     }
 
     .nav-item {
